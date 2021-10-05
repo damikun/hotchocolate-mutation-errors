@@ -11,7 +11,7 @@ These are the advantages of the 6a approach:
 
 Before we begin, let me show you an example from the playground of **6a** error. The pattern allows you to choose whether to use one concrete type as the `union` or group them all together using the common `IBaseError` interface:
 
-![Hotchocolate 6a example comparing union vs shared interface query aproach](./Assets/union_vs_shared_error_interface_graphql_errors.PNG "Hotchocolate 6a example comparing union vs shared interface query aproach")
+![Hotchocolate 6a example comparing union vs shared interface query aproach](./Assets/union_vs_shared_error_interface_graphql_errors.png "Hotchocolate 6a example comparing union vs shared interface query aproach")
 
 > &#10240;
 > **NOTE:** Please make sure you have already [read his](https://productionreadygraphql.com/2020-08-01-guide-to-graphql-errors) article, because my article does not explain the advantages or disadvantages of the different approaches. I only take the most recommended approach (**6a**) and show the implementation under Hotchocolate GraphQL Server.
@@ -978,7 +978,7 @@ export type CreateNewUserMutation = {
 
 </br>
 
-You can also rewrite your mutation to look for specific bug types if they contain some error-specific fields:
+You can also rewrite your mutation to query for specific error types if they contain some error-specific fields:
 
 
 ```graphql
