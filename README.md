@@ -7,9 +7,9 @@ Dealing with errors in Graphql is a topic on which there are numerous articles a
 It provides implementation of **stage 6a** mutation error handling from *Marc-Andre Giroux* [Guide to graphql errors](https://productionreadygraphql.com/2020-08-01-guide-to-graphql-errors) under **Hotchocolate** (.Net) GraphQL Server including some base integration with MediatR.
 
 These are the advantages of the 6a approach:
-✅Pro: Expressive and Discoverable Schema
-✅Pro: Support for Multiple Errors
-✅Pro: Easier Evolution
+- ✅Pro: Expressive and Discoverable Schema
+- ✅Pro: Support for Multiple Errors
+- ✅Pro: Easier Evolution
 
 Before we begin, let me show you an example from the playground of **6a** error. The pattern allows you to choose whether to use one concrete type as the `union` or group them all together using the common `IBaseError` interface:
 
@@ -33,3 +33,39 @@ Before we begin, let me show you an example from the playground of **6a** error.
 https://github.com/damikun/trouble-training
 
 This open source fullstack WorkShop shows an example WebHook application with a self-hosted IdentityServer and guides you on how to set up distributed tracing and monitoring for your app.
+
+### Quick start
+
+1) Make sure you have Net 5.0 SDK installed. You can cheque the SDK version by running: dotnet --list-sdks in your terminal.
+
+```sh
+#Example output on Windows
+PS C:\Users\dakupc> dotnet --list-sdks
+5.0.100 [C:\Program Files\dotnet\sdk]
+5.0.201 [C:\Program Files\dotnet\sdk]
+```
+
+2) Clone the repo
+
+```sh
+ git clone https://github.com/damikun/hotchocolate-mutation-errors.git
+```
+
+3) `cd` to `Src/API/` and run `dotnet restore`
+
+4) `cd` to `Src/API/ClientApp` and run `yarn install` or `npm install`
+
+>**NOTE:** This may take some time since all `node_modules` of Frontend SPA needs to be installed on first startup.
+
+5) After succesfull restoring `cd` to `Src/API/` and run `dotnet run`.
+
+
+6) Demo runs on: `https://localhost:5001`
+
+</br>
+
+In case you have error with certificates. Install Dev. Certificates:
+
+```sh
+dotnet dev-certs https --trust
+```
