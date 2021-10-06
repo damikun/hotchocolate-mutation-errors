@@ -2,7 +2,9 @@
 
 Dealing with errors in Graphql is a topic on which there are numerous articles and recommendations, but there are not many real-world examples of how to implement a concrete approach under a given language and GraphQL server.
 
-**This repo is related to article:** [GraphQL mutation union erros (6a) with Hotchocolate GraphQL Server](https://github.com/damikun/hotchocolate-mutation-errors/blob/main/Doc/MutationErrors.md#repository) or [Opensource FullStack App Example](https://github.com/damikun/trouble-training).
+**Full Docs:** [GraphQL Mutation Error hadnling](https://github.com/damikun/hotchocolate-mutation-errors/blob/main/Doc/MutationErrors.md)
+
+**This repo is related to article:** [GraphQL mutation union erros (6a) with Hotchocolate GraphQL Server](https://github.com/damikun/hotchocolate-mutation-errors/blob/main/Doc/MutationErrors.md) or [Opensource FullStack App Example](https://github.com/damikun/trouble-training).
 
 It provides implementation of **stage 6a** mutation error handling from *Marc-Andre Giroux* [Guide to graphql errors](https://productionreadygraphql.com/2020-08-01-guide-to-graphql-errors) under **Hotchocolate** (.Net) GraphQL Server including some base integration with MediatR.
 
