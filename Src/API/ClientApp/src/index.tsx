@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { RelayEnvironmentProvider } from "react-relay/hooks";
 import { createEnvironment } from './Utils/Environment';
 import ErrorBoundary from './UIComponents/ErrorBoundery/ErrorBoundary';
 import GlobalBounderyErrorHandler from './Components/Errors/GlobalBounderyErrorHandler';
+import { RelayEnvironmentProvider } from 'react-relay';
 
 ReactDOM.render(
   <React.StrictMode>

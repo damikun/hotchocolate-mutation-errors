@@ -69,6 +69,9 @@ Thumbs.db
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+#Yarn lock files
+yarn.lock
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

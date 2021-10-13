@@ -57,12 +57,14 @@ PS C:\Users\dakupc> dotnet --list-sdks
 
 4) `cd` to `Src/API/ClientApp` and run `yarn install` or `npm install`
 
+5) from `cmd` run `npx tailwindcss-cli@latest init` (in case you dont have tailwind cli installed)
+
 >**NOTE:** This may take some time since all `node_modules` of Frontend SPA needs to be installed on first startup.
 
-5) After succesfull restoring `cd` to `Src/API/` and run `dotnet run`.
+6) After succesfull restoring `cd` to `Src/API/` and run `dotnet run`.
 
 
-6) Demo runs on: `https://localhost:5001`
+7) Demo runs on: `https://localhost:5001`
 
 </br>
 
@@ -71,3 +73,5 @@ In case you have error with certificates. Install Dev. Certificates:
 ```sh
 dotnet dev-certs https --trust
 ```
+
+In case you have problem to restor frontend packages (or compiler errors) delete `yarn.lock` file and re-run `yarn install` (similar for npm)
